@@ -16,6 +16,33 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@nx-electron/*": [
+        "libs/*"
+      ],
+      "@nx-electron/electron": [
+        "xplat/electron/index.ts"
+      ],
+      "@nx-electron/electron/*": [
+        "xplat/electron/*"
+      ],
+      "@nx-electron/ionic": [
+        "xplat/ionic/index.ts"
+      ],
+      "@nx-electron/ionic/*": [
+        "xplat/ionic/*"
+      ],
+      "@nx-electron/nativescript": [
+        "xplat/nativescript/index.ts"
+      ],
+      "@nx-electron/nativescript/*": [
+        "xplat/nativescript/*"
+      ],
+      "@nx-electron/web": [
+        "xplat/web/index.ts"
+      ],
+      "@nx-electron/web/*": [
+        "xplat/web/*"
+      ]
     }
   },
   "exclude": [
