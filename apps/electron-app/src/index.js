@@ -24,14 +24,17 @@ var debugMode = isEnvSet
  * Electron window settings
  */
 var mainWindowSettings = {
-    frame: true,
-    resizable: true,
-    focusable: true,
-    fullscreenable: true,
-    kiosk: false,
+    // frame: true,
+    // resizable: true,
+    // focusable: true,
+    // fullscreenable: true,
+    // kiosk: false,
     webPreferences: {
         devTools: debugMode
-    }
+    },
+    titleBarStyle: 'hiddenInset',
+    transparent: true,
+    vibrancy: 'light'
 };
 /**
  * Hooks for electron main process

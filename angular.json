@@ -63,7 +63,7 @@
       "root": "apps/web-app/",
       "sourceRoot": "apps/web-app/src",
       "projectType": "application",
-      "prefix": "nx-electron",
+      "prefix": "nxe",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -187,7 +187,7 @@
       "root": "apps/web-app/",
       "sourceRoot": "apps/web-app/src",
       "projectType": "application",
-      "prefix": "nx-electron",
+      "prefix": "nxe",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"

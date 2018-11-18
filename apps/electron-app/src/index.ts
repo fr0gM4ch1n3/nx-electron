@@ -13,20 +13,23 @@ const isEnvSet = 'ELECTRON_IS_DEV' in process.env;
 const debugMode = isEnvSet
   ? getFromEnv
   : process.defaultApp ||
-    /node_modules[\\/]electron[\\/]/.test(process.execPath);
+  /node_modules[\\/]electron[\\/]/.test(process.execPath);
 
 /**
  * Electron window settings
  */
 const mainWindowSettings: Electron.BrowserWindowConstructorOptions = {
-  frame: true,
-  resizable: true,
-  focusable: true,
-  fullscreenable: true,
-  kiosk: false,
+  // frame: true,
+  // resizable: true,
+  // focusable: true,
+  // fullscreenable: true,
+  // kiosk: false,
   webPreferences: {
     devTools: debugMode
-  }
+  },
+  titleBarStyle: 'hiddenInset',
+  transparent: true,
+  vibrancy: 'light'
 };
 
 /**
@@ -111,4 +114,4 @@ try {
       createWindow();
     }
   });
-} catch (err) {}
+} catch (err) { }
